@@ -3,11 +3,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const content = document.getElementById('content');
   const toggleBtn = document.getElementById('toggleMode');
 
+  // 🔹 Itt adhatod meg, mely oldalak legyenek karbantartás alatt
+  const maintenancePages = ["szolgaltatas", "kapcsolat"]; 
+  const maintenanceMessage = `
+    <section style="text-align:center; padding:50px;">
+      <h2>⚙ Karbantartás alatt</h2>
+      <p>Kérjük, látogass vissza később.</p>
+    </section>
+  `;
+
   // Menü linkek kezelése
   links.forEach(link => {
     link.addEventListener('click', async (e) => {
       e.preventDefault();
       const page = link.getAttribute('data-page');
+
+      // Ha a lap karbantartás alatt van, csak az üzenetet jelenítse meg
+      if (maintenancePages.includes(page)) {
+        content.innerHTML = maintenanceMessage;
+        content.style.opacity = 1;
+        return;
+      }
 
       content.style.opacity = 0.2;
 
