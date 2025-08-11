@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggleBtn = document.getElementById('toggleMode');
 
   // 🔹 Itt adhatod meg, mely oldalak legyenek karbantartás alatt
-  const maintenancePages = ["szolgaltatas", "kapcsolat"]; 
+  const maintenancePages = ["szolgaltatas", "arak"]; 
   const maintenanceMessage = `
     <section style="text-align:center; padding:50px;">
       <h2>⚙ Karbantartás alatt</h2>
