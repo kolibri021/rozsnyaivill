@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('nav a');
+  const links = document.querySelectorAll('nav a, a[data-page]');
   const content = document.getElementById('content');
   const toggleBtn = document.getElementById('toggleMode');
 
@@ -12,11 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
     </section>
   `;
 
-  // Menü linkek kezelése
+  // Menü és egyéb linkek kezelése
   links.forEach(link => {
     link.addEventListener('click', async (e) => {
       e.preventDefault();
       const page = link.getAttribute('data-page');
+      const target = link.getAttribute('data-target'); // 🔹 Új: opcionális cél ID
+
+      if (!page) return; // ha nincs megadva oldal, nem csinál semmit
 
       // Ha a lap karbantartás alatt van, csak az üzenetet jelenítse meg
       if (maintenancePages.includes(page)) {
@@ -35,6 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           content.innerHTML = html;
           content.style.opacity = 1;
+
+          // 🔹 Ha van target, oda görgetünk
+          if (target) {
+            const scrollTarget = document.getElementById(target);
+            if (scrollTarget) {
+              scrollTarget.scrollIntoView({ behavior: 'smooth' });
+            }
+          }
         }, 200);
       } catch (error) {
         content.innerHTML = `<section><h2>Hiba</h2><p>${error.message}</p></section>`;
