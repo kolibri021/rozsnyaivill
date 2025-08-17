@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Általános Szerződési Feltételek – Rozsnyai Gergő</title>
+  <style>
+    /* Scoped styles to avoid conflict with your site's CSS */
+    .aszf * { box-sizing: border-box; }
+    .aszf { 
+      --bg: #ffffff; 
+      --fg: #0f172a; 
+      --muted: #475569; 
+      --border: #e2e8f0; 
+      --accent: #0ea5e9;
+      color: var(--fg); 
+      background: var(--bg);
+      line-height: 1.6; 
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      max-width: 960px; margin: 0 auto; padding: 2rem 1rem;
+    }
+    .aszf h1, .aszf h2, .aszf h3 { line-height: 1.25; }
+    .aszf h1 { font-size: 2rem; margin: 0 0 1rem; }
+    .aszf h2 { font-size: 1.25rem; margin: 2rem 0 0.5rem; border-bottom: 1px solid var(--border); padding-bottom: .25rem; }
+    .aszf h3 { font-size: 1.05rem; margin: 1rem 0 .25rem; color: var(--muted);}
+    .aszf p { margin: .5rem 0; }
+    .aszf .muted { color: var(--muted); }
+    .aszf .card { border: 1px solid var(--border); border-radius: 1rem; padding: 1rem; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.03); }
+    .aszf .grid { display: grid; gap: 1rem; }
+    .aszf .grid.cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    @media (max-width: 720px) { .aszf .grid.cols-2 { grid-template-columns: 1fr; } }
+    .aszf .toc { position: sticky; top: .5rem; border: 1px solid var(--border); border-radius: .75rem; padding: 1rem; background: #fff; }
+    .aszf .toc a { display: block; padding: .25rem 0; text-decoration: none; color: var(--fg); }
+    .aszf .toc a:hover { color: var(--accent); }
+    .aszf .kbd { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .875rem; padding: .125rem .375rem; border: 1px solid var(--border); border-bottom-width: 2px; border-radius: .375rem; }
+    .aszf .notice { background: #f8fafc; border-left: 3px solid var(--accent); padding: .75rem 1rem; border-radius: .5rem; }
+    .aszf table { width: 100%; border-collapse: collapse; }
+    .aszf th, .aszf td { border: 1px solid var(--border); padding: .5rem .6rem; text-align: left; }
+    .aszf th { background: #f1f5f9; }
+    .aszf details { border: 1px solid var(--border); border-radius: .75rem; padding: .5rem .75rem; background: #fff; }
+    .aszf summary { cursor: pointer; font-weight: 600; }
+    .aszf .topbar { display:flex; align-items:center; justify-content:space-between; gap:.75rem; margin-bottom:1rem; flex-wrap:wrap; }
+    .aszf .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.5rem .8rem; border:1px solid var(--border); border-radius:.5rem; background:#fff; text-decoration:none; color:var(--fg); }
+    .aszf .btn:hover { border-color: var(--accent); }
+    .aszf .small { font-size:.9rem; }
+    .aszf .section { scroll-margin-top: 5rem; }
+  </style>
+</head>
+<body>
+  <section class="aszf" id="aszf-root">
+    <div class="topbar">
+      <h1>Általános Szerződési Feltételek (ÁSZF)</h1>
+      <div>
+        <a class="btn" href="#elallasi-minta">Elállási nyilatkozat minta</a>
+      </div>
+    </div>
+    <p class="muted">Hatályos: 2025.08.17.. Szolgáltató: <strong>Rozsnyai Gergő</strong>, székhely: 2337 Délegyháza, Fűzfa utca 18/B. </p>
+
+    <div class="grid cols-2">
+      <div class="toc">
+        <strong>Tartalomjegyzék</strong>
+        <a href="#szolgaltato-adatai">1. Szolgáltató adatai</a>
+        <a href="#szolgaltatasok-kore">2. Szolgáltatások köre</a>
+        <a href="#szerzodeskotes">3. Szerződéskötés módja</a>
+        <a href="#dijazas">4. Díjazás és fizetés</a>
+        <a href="#teljesites">5. Teljesítés feltételei</a>
+        <a href="#elallas">6. Elállás/felmondás</a>
+        <a href="#szavatossag">7. Szavatosság, jótállás</a>
+        <a href="#felelosseg">8. Felelősség</a>
+        <a href="#panaszkezeles">9. Panaszkezelés</a>
+        <a href="#adatkezeles">10. Adatkezelés</a>
+        <a href="#jogvita">11. Irányadó jog és jogvita</a>
+        <a href="#arak-melleklet">Melléklet: Díjazás (mérési pont)</a>
+        <a href="#elallasi-minta">Melléklet: Elállási nyilatkozat</a>
+      </div>
+
+      <div class="content">
+        <div id="szolgaltato-adatai" class="section">
+          <h2>1. Szolgáltató adatai</h2>
+          <div class="card grid">
+            <p><strong>Név:</strong> Rozsnyai Gergő</p>
+            <p><strong>Székhely / Postacím:</strong> 2337 Délegyháza, Fűzfa utca 18/B</p>
+            <p><strong>Nyilvántartási szám:</strong> 60811590</p>
+            <p><strong>Adószám:</strong> 91295617-1-33 (Alanyi adómentes)</p>
+            <p><strong>Telefon:</strong> +36 30 213 3273</p>
+            <p><strong>E‑mail:</strong> <a href="mailto:rozsnyaigergoev@gmail.com">rozsnyaigergoev@gmail.com</a></p>
+            <p><strong>Kamarai regisztráció:</strong> Pest vármegyei Kereskedelmi és Iparkamara</p>
+          </div>
+        </div>
+
+        <div id="szolgaltatasok-kore" class="section">
+          <h2>2. Szolgáltatások köre</h2>
+          <ul>
+            <li>Villamos biztonsági felülvizsgálat (MSZ HD 60364 és kapcsolódó szabványok alapján), mérési jegyzőkönyv készítésével.</li>
+            <li>Villanyszerelési munkák: új hálózat kiépítése, bővítés, javítás, karbantartás, hibakeresés.</li>
+            <li>Hibaelhárítás eseti kiszállással.</li>
+          </ul>
+          <p class="notice small">A felülvizsgálat eredménye a mérés időpontjára vonatkozik; a későbbi módosítások, terhelésváltozások és külső behatások kockázatát a Megrendelő viseli.</p>
+        </div>
+
+        <div id="szerzodeskotes" class="section">
+          <h2>3. Szerződéskötés módja</h2>
+          <p>A szerződés írásban (ajánlat elfogadása, e‑mailes visszaigazolás) vagy külön vállalkozási szerződéssel jön létre. A Szolgáltató minden munka előtt írásos összefoglalót küld a munkáról, díjról és ütemezésről.</p>
+          <details>
+            <summary>Online/telefonos egyeztetés technikai lépései</summary>
+            <ol>
+              <li>Igényfelmérés (mérési pontok, helyszín, hozzáférés).</li>
+              <li>Írásos ajánlat megküldése.</li>
+              <li>Visszaigazolás/megrendelés a Megrendelőtől.</li>
+              <li>Időpont egyeztetés, helyszíni feltételek biztosítása.</li>
+            </ol>
+          </details>
+        </div>
+
+        <div id="dijazas" class="section">
+          <h2>4. Díjazás és fizetési feltételek</h2>
+          <ul>
+            <li>Az árak egyedi ajánlat alapján kerülnek meghatározásra; villamos biztonsági felülvizsgálatnál mérési pont alapú elszámolás is alkalmazható.</li>
+            <li>Az árak bruttó árak; alanyi adómentes.</li>
+            <li>Fizetés: banki átutalás vagy készpénz; fizetési határidő a számla kiállításától számított 8 nap, eltérő megállapodás hiányában.</li>
+            <li>Kiszállási díj és útiköltség megbízásonként kerül meghatározásra a helyszín függvényében.</li>
+          </ul>
+        </div>
+
+        <div id="teljesites" class="section">
+          <h2>5. Teljesítés feltételei</h2>
+          <ul>
+            <li>A Megrendelő biztosítja a helyszín megközelíthetőségét, a szükséges áramtalanítás lehetőségét, hozzáférést a berendezésekhez, illetve a kapcsolódó dokumentációt.</li>
+            <li>A teljesítési határidő az ajánlatban kerül rögzítésre; vis maior esetén a Szolgáltató jogosult új időpontot egyeztetni.</li>
+            <li>A felülvizsgálat során feltárt hibák és hiányosságok kijavítása külön megrendelés tárgya.</li>
+          </ul>
+        </div>
+
+        <div id="elallas" class="section">
+          <h2>6. Fogyasztói elállás és felmondás</h2>
+          <p>Távollevők között kötött fogyasztói szerződés esetén a Megrendelőt a 45/2014. (II.26.) Korm. rendelet szerint 14 napos elállási jog illeti meg, kivéve, ha a szolgáltatás nyújtását a Megrendelő kifejezett kérésére a határidő lejárta előtt megkezdte a Szolgáltató. Ilyen esetben a már teljesített szolgáltatás arányos díja felszámításra kerül.</p>
+          <p>Az elállás gyakorlásához használható a jelen dokumentum végén található <a href="#elallasi-minta">Elállási nyilatkozat minta</a>.</p>
+        </div>
+
+        <div id="szavatossag" class="section">
+          <h2>7. Szavatosság és jótállás</h2>
+          <ul>
+            <li>Az elvégzett munkára a Polgári Törvénykönyv szerinti kellékszavatosság irányadó.</li>
+            <li>Villanyszerelési munkákra 12 hónap jótállás vállalt, rendeltetésszerű használat mellett.</li>
+            <li>Felülvizsgálati jegyzőkönyv a méréskori állapotot tanúsítja; üzemeltetésből eredő változásokért a Szolgáltató nem felel.</li>
+          </ul>
+        </div>
+
+        <div id="felelosseg" class="section">
+          <h2>8. Felelősségkorlátozás</h2>
+          <p>A Szolgáltató nem felel olyan károkért, amelyek a berendezések nem rendeltetésszerű használatából, a Megrendelő mulasztásából vagy harmadik fél tevékenységéből erednek. Közvetett károkért való felelősség – a jogszabály által megengedett mértékig – kizárt.</p>
+        </div>
+
+        <div id="panaszkezeles" class="section">
+          <h2>9. Panaszkezelés</h2>
+          <p>Panasz benyújtható írásban az <a href="mailto:rozsnyaigergoev@gmail.com">rozsnyaigergoev@gmail.com</a> címen vagy szóban a +36 30 213 3273 telefonszámon.</p>
+          <p>Fogyasztói jogvita esetén a Megrendelő fordulhat a lakóhelye szerinti Békéltető Testülethez; a Szolgáltató székhelye szerint illetékes testület: <strong>Pest Vármegyei Békéltető Testület</strong>.</p>
+        </div>
+
+        <div id="adatkezeles" class="section">
+          <h2>10. Adatkezelés</h2>
+          <p>A Szolgáltató a személyes adatokat az (EU) 2016/679 rendelet (GDPR) és az Info tv. előírásai szerint kezeli. Részletek az Adatkezelési tájékoztatóban érhetők el. A megrendelés teljesítéséhez szükséges adatok kezelése szerződés teljesítésén alapul.</p>
+        </div>
+
+        <div id="jogvita" class="section">
+          <h2>11. Irányadó jog és jogvita</h2>
+          <p>Jelen ÁSZF-re a magyar jog az irányadó. A felek törekednek a vitás kérdések békés rendezésére; ennek eredménytelensége esetén a perindításra a Szolgáltató székhelye szerint illetékes bíróság rendelkezik hatáskörrel.</p>
+        </div>
+
+        <div id="arak-melleklet" class="section">
+          <h2>Melléklet: Díjazás (mérési pont alapú)</h2>
+          <table>
+            <thead><tr><th>Tétel</th><th>Díj</th><th>Megjegyzés</th></tr></thead>
+            <tbody>
+              <tr><td>Villamos biztonsági felülvizsgálat</td><td>1 200 Ft/pont (bruttó)</td><td>Mérési pontonként; helyszín és kiszállási díj külön.</td></tr>
+              <tr><td>Kiszállási díj</td><td>Egyedi</td><td>Távolság és ráfordítás alapján.</td></tr>
+              <tr><td>Hibaelhárítás óradíj</td><td>Egyedi</td><td>Előzetes egyeztetés szerint.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="elallasi-minta" class="section">
+          <h2>Melléklet: Elállási nyilatkozat minta</h2>
+          <p class="small muted">A 45/2014. (II.26.) Korm. rendelet melléklete alapján.</p>
+          <div class="card">
+            <p><strong>Címzett:</strong> Rozsnyai Gergő, 2337 Délegyháza, Fűzfa utca 18/B, e‑mail: rozsnyaigergoev@gmail.com</p>
+            <p>Alulírott(ak) kijelentem/kijelentjük, hogy gyakorlom/gyakoroljuk elállási jogomat/jogunkat az alábbi szolgáltatás nyújtására irányuló szerződés tekintetében:</p>
+            <p>Megrendelés dátuma: ________   /   Teljesítés dátuma: ________</p>
+            <p>Megrendelő neve: _____________________</p>
+            <p>Megrendelő címe: _____________________</p>
+            <p>Visszatérítés módja (bankszámla): _____________________</p>
+            <p>Dátum: ____________    Aláírás: _____________________ (csak papíron benyújtva)</p>
+          </div>
+        </div>
+
+        <p class="muted">Kelt: Délegyháza, 2025.08.17.</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Smooth scroll for in-page links within the ASZF container
+    (function() {
+      const root = document.getElementById('aszf-root');
+      root.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e) {
+          const id = this.getAttribute('href').slice(1);
+          const el = document.getElementById(id);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.replaceState(null, '', '#' + id);
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
