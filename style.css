@@ -1,3 +1,39 @@
+:root {
+  --logo-img: url("logo.png"); /* ide a logó elérési útja */
+}
+
+/* Fejléc alap */
+header {
+  position: relative;
+  text-align: center;   /* a szöveg középre */
+  padding: 1rem 0;
+  background: #f5f5f5;
+}
+
+/* Bal oldali logó */
+header::before {
+  content: "";
+  position: absolute;
+  left: 1rem;           /* távolság a bal szélétől */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  background: var(--logo-img) no-repeat center/contain;
+}
+
+/* Jobb oldali logó */
+header::after {
+  content: "";
+  position: absolute;
+  right: 1rem;          /* távolság a jobb szélétől */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  background: var(--logo-img) no-repeat center/contain;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
