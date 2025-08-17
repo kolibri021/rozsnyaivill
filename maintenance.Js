@@ -1,7 +1,7 @@
 // Oldalak listája, amik karbantartás alatt vannak
 const maintenancePages = [
     "index.html",
-    "arak.html"
+    "arak1.html"
 ];
 
 // Karbantartási HTML fájl neve
